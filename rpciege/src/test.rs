@@ -18,7 +18,7 @@ fn generate_pew_symbol() {
 
     let mut iters: i32 = 0;
     let mut has_pew = false;
-    let symbol2 = Symbol::new(&env,"b");
+    let symbol2 = Symbol::new(&env,"aa");
 
     while !has_pew {
         let symbol = Symbol::new(&env, format!("{}{}", symbol2.to_string(), iters.to_string()).as_str());
