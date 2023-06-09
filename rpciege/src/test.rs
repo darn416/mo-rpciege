@@ -18,7 +18,7 @@ fn generate_pew_symbol() {
 
     let mut iters: i32 = 0;
     let mut has_pew = false;
-    let symbol2 = Symbol::new(&env,"aa");
+    let symbol2 = Symbol::new(&env,"ab");
 
     while !has_pew {
         let symbol = Symbol::new(&env, format!("{}{}", symbol2.to_string(), iters.to_string()).as_str());
@@ -66,7 +66,7 @@ fn generate_pew_symbol() {
 fn generate_pew_symbol_2() {
     let env = Env::default();
 
-    let symbol = Symbol::new(&env,"aa81507");
+    let symbol = Symbol::new(&env,"ab398112");
 
     let bytes = symbol.clone().to_xdr(&env);
     let hash = env.crypto().sha256(&bytes);
