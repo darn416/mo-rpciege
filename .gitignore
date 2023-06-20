@@ -1,4 +1,5 @@
-rpciege/target/
+target/
+Cargo.lock
 /.sccache/
 .DS_Store
 .soroban
