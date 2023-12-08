@@ -4,8 +4,12 @@ resolver = "2"
 members = [
     "ex_liquidity_pool",
     "ex_token",
-    "rpciege"
+    "rpciege",
+    "hello-soroban"
 ]
+
+[workspace.dependencies]
+soroban-sdk = "20.0.0-rc2.2"
 
 [profile.release]
 opt-level = "z"
@@ -17,5 +21,6 @@ panic = "abort"
 codegen-units = 1
 lto = true
 
-[workspace.dependencies.soroban-sdk]
-version = "0.8.4"
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true
